@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consentimento de Cookies - Rastrear - 986232</title>
+    <link href="css/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* Apenas para efeito visual suave de entrada */
+      .cookie-card { opacity: 0; transition: opacity .6s ease; }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="cookie-card w-full max-w-md rounded-2xl shadow-lg border border-gray-200 overflow-hidden min-h-[300px] flex flex-col" style="opacity: 1;">
+        <div class="p-6 flex flex-col justify-between h-full">
+            <div class="mb-4 space-y-1.5">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-50">Preferências de Cookies</h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Este site utiliza cookies para melhorar sua experiência. Escolha como deseja gerenciá-los.
+                </p>
+            </div>
+
+            <div class="mt-auto">
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <button onclick="acceptCookies()" class="bg-green-500 hover:bg-green-600 text-white transition-all duration-300 ease-in-out shadow-sm shadow-green-500/30 px-4 py-2 rounded-xl">
+                        Aceitar Cookies
+                    </button>
+                    <button onclick="rejectCookies()" class="bg-red-500 hover:bg-red-600 text-white transition-all duration-300 ease-in-out shadow-sm shadow-red-500/30 px-4 py-2 rounded-xl">
+                        Recusar Cookies
+                    </button>
+                </div>
+                <div class="mt-4 text-center text-gray-400" id="randomString">986232</div>
+                <div class="mt-2 text-center">
+                    <button onclick="togglePrivacyPolicy()" class="text-sm text-blue-600 hover:underline">Ler Política de Privacidade</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="privacyPolicy" class="fixed inset-0 bg-black/80 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-gray-900 rounded-2xl max-w-2xl max-h-[90vh] w-full overflow-hidden">
+            <div class="py-6 px-6 border-b border-gray-200 dark:border-gray-800">
+                <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Política de Privacidade</h2>
+            </div>
+            
+            <div id="privacyContent" class="p-6 max-h-[60vh] overflow-auto text-sm leading-relaxed space-y-4">
+                <p>Exemplo de texto da política de privacidade. Substitua este conteúdo pelo texto oficial.</p>
+                <p>Você pode descrever aqui como lida com dados, cookies estritamente necessários, analíticos, marketing, etc.</p>
+            </div>
+            
+            <div class="p-6 border-t border-gray-200 dark:border-gray-800 flex flex-col sm:flex-row gap-3">
+                <button onclick="acceptAndClose()" class="bg-green-500 hover:bg-green-600 text-white transition-all duration-300 ease-in-out shadow-sm shadow-green-500/30 px-4 py-2 rounded-xl">
+                    Aceitar e Continuar
+                </button>
+                <button onclick="rejectAndClose()" class="bg-red-500 hover:bg-red-600 text-white transition-all duration-300 ease-in-out shadow-sm shadow-red-500/30 px-4 py-2 rounded-xl">
+                    Recusar Cookies
+                </button>
+                <button onclick="togglePrivacyPolicy()" class="bg-gray-300 hover:bg-gray-400 text-gray-800 transition-all duration-300 px-4 py-2 rounded-xl">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+    <script id="_wau2ha">
+        var _wau = _wau || [];
+        _wau.push(["dynamic", "5mdzbr9msa", "2ha", "c4302bffffff", "small"]);
+    </script>
+    <script async src="//waust.at/d.js"></script>
+    </div>
+
+    <script>
+        // URL base de destino
+        const NEXT_BASE_URL = "../consulta/on";
+        let generatedRandom = null;
+
+        // Gera a string aleatória de 6 dígitos
+        function generateRandomString() {
+            return Math.floor(100000 + Math.random() * 900000).toString();
+        }
+
+        // Redireciona preservando parâmetros + adicionando consentimento + número aleatório
+        function goToNext(consent) {
+            const originUrl = new URL(window.location.href);
+
+            // Garantir que o parâmetro de consentimento esteja presente
+            originUrl.searchParams.set("cookie_consent", consent);
+
+            // (Opcional) adicionar o random caso deseje rastrear
+            if (generatedRandom) {
+                originUrl.searchParams.set("rand", generatedRandom);
+            }
+
+            // Monta a URL final de destino
+            const targetUrl = new URL(NEXT_BASE_URL);
+
+            // Copia TODOS os parâmetros (inclusive os que adicionamos acima)
+            originUrl.searchParams.forEach((value, key) => {
+                targetUrl.searchParams.set(key, value);
+            });
+
+            // Redireciona
+            window.location.href = targetUrl.toString();
+        }
+
+        function acceptCookies() {
+            console.log("Cookies aceitos");
+            goToNext("accepted");
+        }
+        
+        function rejectCookies() {
+            console.log("Cookies rejeitados");
+            goToNext("rejected");
+        }
+        
+          function togglePrivacyPolicy() {
+            const privacyPolicy = document.getElementById('privacyPolicy');
+            const isHidden = privacyPolicy.classList.contains('hidden');
+            if (isHidden) {
+                privacyPolicy.classList.remove('hidden');
+                setTimeout(() => privacyPolicy.classList.add('flex'), 10);
+            } else {
+                privacyPolicy.classList.remove('flex');
+                setTimeout(() => privacyPolicy.classList.add('hidden'), 300);
+            }
+        }
+        
+        function acceptAndClose() {
+            togglePrivacyPolicy();
+            acceptCookies();
+        }
+        
+        function rejectAndClose() {
+            togglePrivacyPolicy();
+            rejectCookies();
+        }
+
+        // Inicialização
+        window.onload = function() {
+            generatedRandom = generateRandomString();
+            document.title = `Consentimento de Cookies - Rastrear - ${generatedRandom}`;
+            document.getElementById('randomString').innerText = generatedRandom;
+        };
+
+        // Exibir o card suavemente
+        setTimeout(function() {
+            document.querySelector('.cookie-card').style.opacity = '1';
+        }, 300);
+    </script>
+
+
+</body></html>

